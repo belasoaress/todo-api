@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Rodar ESLint
-        run: node node_modules/eslint/bin/eslint.js "src/**/*.js" "tests/**/*.js"
+        run: node node_modules/eslint/bin/eslint.js --no-eslintrc -c .eslintrc.json "src/**/*.js" "tests/**/*.js"
 
   test:
     name: Testes (Jest)
@@ -46,7 +46,7 @@ jobs:
         run: npm install
 
       - name: Rodar testes com cobertura
-        run: npm test
+        run: node node_modules/jest/bin/jest.js --coverage
 
       - name: Publicar relatório de cobertura
         uses: actions/upload-artifact@v4
