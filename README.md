@@ -2,7 +2,7 @@
 
 API REST de gerenciamento de tarefas desenvolvida com Node.js e Express.
 
-![CI](https://github.com/belasoaress/todo-api/actions/workflows/ci.yml/badge.svg)
+[![CI](https://github.com/belasoaress/todo-api/actions/workflows/ci.yml/badge.svg)](https://github.com/belasoaress/todo-api/actions/workflows/ci.yml)
 
 ## Tecnologias
 
