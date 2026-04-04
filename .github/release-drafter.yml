@@ -1,0 +1,60 @@
+name-template: "v$RESOLVED_VERSION"
+tag-template: "v$RESOLVED_VERSION"
+
+categories:
+  - title: "✨ Novas Funcionalidades"
+    labels:
+      - "feat"
+      - "feature"
+  - title: "🐛 Correções de Bugs"
+    labels:
+      - "fix"
+      - "bugfix"
+  - title: "📖 Documentação"
+    labels:
+      - "docs"
+  - title: "🔧 Manutenção"
+    labels:
+      - "chore"
+      - "refactor"
+
+autolabeler:
+  - label: "feat"
+    title:
+      - "/^feat/i"
+  - label: "fix"
+    title:
+      - "/^fix/i"
+  - label: "docs"
+    title:
+      - "/^docs/i"
+  - label: "chore"
+    title:
+      - "/^chore/i"
+      - "/^refactor/i"
+
+change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
+change-title-escapes: '\<*_&'
+
+version-resolver:
+  major:
+    labels:
+      - "major"
+  minor:
+    labels:
+      - "feat"
+      - "feature"
+  patch:
+    labels:
+      - "fix"
+      - "bugfix"
+      - "docs"
+      - "chore"
+  default: patch
+
+template: |
+  ## O que mudou nesta versão 🚀
+
+  $CHANGES
+
+  **Release gerado automaticamente pelo GitHub Actions.**
