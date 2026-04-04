@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Rodar ESLint
-        run: npx eslint "src/**/*.js" "tests/**/*.js"
+        run: node node_modules/eslint/bin/eslint.js "src/**/*.js" "tests/**/*.js"
 
   test:
     name: Testes (Jest)
