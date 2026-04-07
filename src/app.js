@@ -38,4 +38,6 @@ if (require.main === module) {
   });
 }
 
+var x = 1
+
 module.exports = app;
