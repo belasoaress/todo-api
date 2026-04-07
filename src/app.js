@@ -20,8 +20,6 @@ app.get("/", (req, res) => {
 });
 
 
-
-var x = 1
 app.use("/tasks", tasksRouter);
 
 app.use((err, req, res, next) => {
