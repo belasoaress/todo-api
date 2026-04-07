@@ -19,7 +19,6 @@ app.get("/", (req, res) => {
   });
 });
 
-var x = 1
 
 app.use("/tasks", tasksRouter);
 
