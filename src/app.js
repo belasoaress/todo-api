@@ -19,6 +19,8 @@ app.get("/", (req, res) => {
   });
 });
 
+var x = 1
+
 app.use("/tasks", tasksRouter);
 
 app.use((err, req, res, next) => {
@@ -38,6 +40,5 @@ if (require.main === module) {
   });
 }
 
-var x = 1
 
 module.exports = app;
